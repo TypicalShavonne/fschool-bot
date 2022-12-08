@@ -3,7 +3,7 @@
  * Version 2.1.6
  * Robert Borghese
  ******************************************************/
-
+const tokenBot = process.env['TOKEN']
 const DBM = {};
 DBM.version = "2.1.6";
 
@@ -657,7 +657,7 @@ Bot.initEvents = function () {
 };
 
 Bot.login = function () {
-  this.bot.login(Files.data.settings.token);
+  this.bot.login(tokenBot);
 };
 
 Bot.onReady = function () {
