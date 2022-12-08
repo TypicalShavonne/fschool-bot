@@ -4,6 +4,8 @@
  * Robert Borghese
  ******************************************************/
 const tokenBot = process.env['TOKEN']
+const path = require('path')
+require('dotenv').config({ path: path.resolve(__dirname, '.env') })
 const DBM = {};
 DBM.version = "2.1.6";
 

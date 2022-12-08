@@ -6,6 +6,7 @@
   "dependencies": {
     "chalk": "latest",
     "discord.js": "^13.8.0",
+    "dotenv": "^16.0.3",
     "fstorm": "latest",
     "jimp": "latest",
     "moment": "latest",
