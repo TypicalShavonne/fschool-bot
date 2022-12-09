@@ -3,7 +3,6 @@
  * Version 2.1.6
  * Robert Borghese
  ******************************************************/
-const tokenBot = process.env['TOKEN']
 const path = require('path')
 require('dotenv').config({ path: path.resolve(__dirname, '.env') })
 const DBM = {};
@@ -659,7 +658,7 @@ Bot.initEvents = function () {
 };
 
 Bot.login = function () {
-  this.bot.login(tokenBot);
+  this.bot.login(process.env['TOKEN']);
 };
 
 Bot.onReady = function () {
